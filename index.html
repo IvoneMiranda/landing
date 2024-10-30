@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    
+    <!-- Header con la imagen del encabezado -->
+    <header class="parallax">
+        <div class="overlay">
+    </div>
+        <a href="https://www.pactoglobal.org.bo/" target="_blank" class="logo">
+            <img src="pactog__logoficial.png" alt="Logo de la empresa">
+        </a>
+    </header>
+    <!-- Título y descripción de la campaña -->
+    <section>
+        <h1>BOLIVIA EN VOZ DE MUJER</h1>
+        <p>Aquí va la descripción</p>
+    </section>
+
+    <!-- Espacio para el video -->
+    <section>
+        <div>
+            <p>Aquí va el video</p>
+        </div>
+    </section>
+
+    <!-- Título antes de las cajas de blogs -->
+    <section>
+        <h2>IN HER WORDS</h2>
+    </section>
+
+    <!-- Aquí es la búsqueda y el desplegable -->
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Buscar por nombre...">
+        <select id="page-dropdown" class="dropdown">
+        <option value="1">Página 1</option>
+        <option value="2">Página 2</option>
+        <option value="3">Página 3</option>
+        <option value="4">Página 4</option>
+        <option value="5">Página 5</option>
+        <option value="6">Página 6</option>
+            <!-- Las opciones se llenan dinámicamente desde el JavaScript -->
+        </select>
+        <button id="search-btn">Buscar</button>
+    </div>
+
+    <section>
+        <div id="results" class="blog-container">
+            <!-- Aquí se llenarán los resultados -->
+        </div>
+    </section>
+    <!-- Cajas de blogs -->
+    <section>
+        
+        <div class="blog-container">
+
+            <!-- Blog 1 -->
+            <div class="blog-box">
+                <div class="image-container">
+                    <img src="ruta-de-la-imagen.jpg" alt="Imagen de la mujer 1">
+                </div>
+                <blockquote>
+                    <p>“Cita inspiradora de la mujer 1...”</p>
+                </blockquote>
+                <p class="author">Alice, Cargo</p>
+            </div>
+
+            <!-- Blog 2 -->
+            <div class="blog-box">
+                <div class="image-container">
+                    <img src="ruta-de-la-imagen.jpg" alt="Imagen de la mujer 2">
+                </div>
+                <blockquote>
+                    <p>“Cita inspiradora de la mujer 2...”</p>
+                </blockquote>
+                <p class="author">Nombre de la mujer 2, Cargo</p>
+            </div>
+
+            <!-- Blog 3 -->
+            <div class="blog-box">
+                <div class="image-container">
+                    <img src="ruta-de-la-imagen.jpg" alt="Imagen de la mujer 3">
+                </div>
+                <blockquote>
+                    <p>“Cita inspiradora de la mujer 3...”</p>
+                </blockquote>
+                <p class="author">Nombre de la mujer 3, Cargo</p>
+            </div>
+
+            <!-- Blog 4 -->
+            <div class="blog-box">
+                <div class="image-container">
+                    <img src="ruta-de-la-imagen.jpg" alt="Imagen de la mujer 4">
+                </div>
+                <blockquote>
+                    <p>“Cita inspiradora de la mujer 4...”</p>
+                </blockquote>
+                <p class="author">Nombre de la mujer 4, Cargo</p>
+            </div>
+
+            <!-- Blog 5 -->
+            <div class="blog-box">
+                <div class="image-container">
+                    <img src="ruta-de-la-imagen.jpg" alt="Imagen de la mujer 5">
+                </div>
+                <blockquote>
+                    <p>“Cita inspiradora de la mujer 5...”</p>
+                </blockquote>
+                <p class="author">Nombre de la mujer 5, Cargo</p>
+            </div>
+
+            <!-- Blog 6 -->
+            <div class="blog-box">
+                <div class="image-container">
+                    <img src="ruta-de-la-imagen.jpg" alt="Imagen de la mujer 6">
+                </div>
+                <blockquote>
+                    <p>“Cita inspiradora de la mujer 6...”</p>
+                </blockquote>
+                <p class="author">Nombre de la mujer 6, Cargo</p>
+            </div>
+
+            <!-- Blog 7 -->
+            <div class="blog-box">
+                <div class="image-container">
+                    <img src="ruta-de-la-imagen.jpg" alt="Imagen de la mujer 7">
+                </div>
+                <blockquote>
+                    <p>“Cita inspiradora de la mujer 7...”</p>
+                </blockquote>
+                <p class="author">Nombre de la mujer 7, Cargo</p>
+            </div>
+
+            <!-- Blog 8 -->
+            <div class="blog-box">
+                <div class="image-container">
+                    <img src="ruta-de-la-imagen.jpg" alt="Imagen de la mujer 8">
+                </div>
+                <blockquote>
+                    <p>“Cita inspiradora de la mujer 8...”</p>
+                </blockquote>
+                <p class="author">Nombre de la mujer 8, Cargo</p>
+            </div>
+
+            <!-- Blog 9 -->
+            <div class="blog-box">
+                <div class="image-container">
+                    <img src="ruta-de-la-imagen.jpg" alt="Imagen de la mujer 9">
+                </div>
+                <blockquote>
+                    <p>“Cita inspiradora de la mujer 9...”</p>
+                </blockquote>
+                <p class="author">Nombre de la mujer 9, Cargo</p>
+            </div>
+            <!-- Blog 10 -->
+        <div class="blog-box">
+            <div class="image-container">
+                <img src="ruta-de-la-imagen.jpg" alt="Imagen de la mujer 10">
+            </div>
+            <blockquote>
+                <p>“Cita inspiradora de la mujer 10...”</p>
+            </blockquote>
+            <p class="author">Nombre de la mujer 10, Cargo</p>
+        </div>
+
+            <!-- Blog 11 -->
+            <div class="blog-box">
+                <div class="image-container">
+                    <img src="ruta-de-la-imagen.jpg" alt="Imagen de la mujer 11">
+                </div>
+                <blockquote>
+                    <p>“Cita inspiradora de la mujer 11...”</p>
+                </blockquote>
+                <p class="author">Nombre de la mujer 11, Cargo</p>
+            </div>
+
+            <!-- Blog 12 -->
+            <div class="blog-box">
+                <div class="image-container">
+                    <img src="ruta-de-la-imagen.jpg" alt="Imagen de la mujer 12">
+                </div>
+                <blockquote>
+                    <p>“Cita inspiradora de la mujer 12...”</p>
+                </blockquote>
+                <p class="author">Nombre de la mujer 12, Cargo</p>
+            </div>
+
+            <!-- Blog 13 -->
+            <div class="blog-box">
+                <div class="image-container">
+                    <img src="ruta-de-la-imagen.jpg" alt="Imagen de la mujer 13">
+                </div>
+                <blockquote>
+                    <p>“Cita inspiradora de la mujer 13...”</p>
+                </blockquote>
+                <p class="author">Nombre de la mujer 13, Cargo</p>
+            </div>
+
+            <!-- Blog 14 -->
+            <div class="blog-box">
+                <div class="image-container">
+                    <img src="ruta-de-la-imagen.jpg" alt="Imagen de la mujer 14">
+                </div>
+                <blockquote>
+                    <p>“Cita inspiradora de la mujer 14...”</p>
+                </blockquote>
+                <p class="author">Nombre de la mujer 14, Cargo</p>
+            </div>
+
+            <!-- Blog 15 -->
+            <div class="blog-box">
+                <div class="image-container">
+                    <img src="ruta-de-la-imagen.jpg" alt="Imagen de la mujer 15">
+                </div>
+                <blockquote>
+                    <p>“Cita inspiradora de la mujer 15...”</p>
+                </blockquote>
+                <p class="author">Nombre de la mujer 15, Cargo</p>
+            </div>
+
+            <!-- Blog 16 -->
+            <div class="blog-box">
+                <div class="image-container">
+                    <img src="ruta-de-la-imagen.jpg" alt="Imagen de la mujer 16">
+                </div>
+                <blockquote>
+                    <p>“Cita inspiradora de la mujer 16...”</p>
+                </blockquote>
+                <p class="author">Nombre de la mujer 16, Cargo</p>
+            </div>
+
+            <!-- Blog 17 -->
+            <div class="blog-box">
+                <div class="image-container">
+                    <img src="ruta-de-la-imagen.jpg" alt="Imagen de la mujer 17">
+                </div>
+                <blockquote>
+                    <p>“Cita inspiradora de la mujer 17...”</p>
+                </blockquote>
+                <p class="author">Nombre de la mujer 17, Cargo</p>
+            </div>
+
+            <!-- Blog 18 -->
+            <div class="blog-box">
+                <div class="image-container">
+                    <img src="ruta-de-la-imagen.jpg" alt="Imagen de la mujer 18">
+                </div>
+                <blockquote>
+                    <p>“Cita inspiradora de la mujer 18...”</p>
+                </blockquote>
+                <p class="author">Nombre de la mujer 18, Cargo</p>
+            </div>
+
+            <!-- Blog 19 -->
+            <div class="blog-box">
+                <div class="image-container">
+                    <img src="ruta-de-la-imagen.jpg" alt="Imagen de la mujer 19">
+                </div>
+                <blockquote>
+                    <p>“Cita inspiradora de la mujer 19...”</p>
+                </blockquote>
+                <p class="author">Nombre de la mujer 19, Cargo</p>
+            </div>
+
+            <!-- Blog 20 -->
+            <div class="blog-box">
+                <div class="image-container">
+                    <img src="ruta-de-la-imagen.jpg" alt="Imagen de la mujer 20">
+                </div>
+                <blockquote>
+                    <p>“Cita inspiradora de la mujer 20...”</p>
+                </blockquote>
+                <p class="author">Nombre de la mujer 20, Cargo</p>
+            </div>
+
+            <!-- Blog 21 -->
+            <div class="blog-box">
+                <div class="image-container">
+                    <img src="ruta-de-la-imagen.jpg" alt="Imagen de la mujer 21">
+                </div>
+                <blockquote>
+                    <p>“Cita inspiradora de la mujer 21...”</p>
+                </blockquote>
+                <p class="author">Nombre de la mujer 21, Cargo</p>
+            </div>
+
+            <!-- Blog 22 -->
+            <div class="blog-box">
+                <div class="image-container">
+                    <img src="ruta-de-la-imagen.jpg" alt="Imagen de la mujer 22">
+                </div>
+                <blockquote>
+                    <p>“Cita inspiradora de la mujer 22...”</p>
+                </blockquote>
+                <p class="author">Nombre de la mujer 22, Cargo</p>
+            </div>
+
+            <!-- Blog 23 -->
+            <div class="blog-box">
+                <div class="image-container">
+                    <img src="ruta-de-la-imagen.jpg" alt="Imagen de la mujer 23">
+                </div>
+                <blockquote>
+                    <p>“Cita inspiradora de la mujer 23...”</p>
+                </blockquote>
+                <p class="author">Nombre de la mujer 23, Cargo</p>
+            </div>
+
+            <!-- Blog 24 -->
+            <div class="blog-box">
+                <div class="image-container">
+                    <img src="ruta-de-la-imagen.jpg" alt="Imagen de la mujer 24">
+                </div>
+                <blockquote>
+                    <p>“Cita inspiradora de la mujer 24...”</p>
+                </blockquote>
+                <p class="author">Nombre de la mujer 24, Cargo</p>
+            </div>
+
+            <!-- Blog 25 -->
+            <div class="blog-box">
+                <div class="image-container">
+                    <img src="ruta-de-la-imagen.jpg" alt="Imagen de la mujer 25">
+                </div>
+                <blockquote>
+                    <p>“Cita inspiradora de la mujer 25...”</p>
+                </blockquote>
+                <p class="author">Nombre de la mujer 25, Cargo</p>
+            </div>
+
+            <!-- Blog 26 -->
+            <div class="blog-box">
+                <div class="image-container">
+                    <img src="ruta-de-la-imagen.jpg" alt="Imagen de la mujer 26">
+                </div>
+                <blockquote>
+                    <p>“Cita inspiradora de la mujer 26...”</p>
+                </blockquote>
+                <p class="author">Nombre de la mujer 26, Cargo</p>
+            </div>
+
+            <!-- Blog 27 -->
+            <div class="blog-box">
+                <div class="image-container">
+                    <img src="ruta-de-la-imagen.jpg" alt="Imagen de la mujer 27">
+                </div>
+                <blockquote>
+                    <p>“Cita inspiradora de la mujer 27...”</p>
+                </blockquote>
+                <p class="author">Nombre de la mujer 27, Cargo</p>
+            </div>
+
+            <!-- Blog 28 -->
+            <div class="blog-box">
+                <div class="image-container">
+                    <img src="ruta-de-la-imagen.jpg" alt="Imagen de la mujer 28">
+                </div>
+                <blockquote>
+                    <p>“Cita inspiradora de la mujer 28...”</p>
+                </blockquote>
+                <p class="author">Nombre de la mujer 28, Cargo</p>
+            </div>
+
+            <!-- Blog 29 -->
+            <div class="blog-box">
+                <div class="image-container">
+                    <img src="ruta-de-la-imagen.jpg" alt="Imagen de la mujer 29">
+                </div>
+                <blockquote>
+                    <p>“Cita inspiradora de la mujer 29...”</p>
+                </blockquote>
+                <p class="author">Nombre de la mujer 29, Cargo</p>
+            </div>
+
+            <!-- Blog 30 -->
+            <div class="blog-box">
+                <div class="image-container">
+                    <img src="ruta-de-la-imagen.jpg" alt="Imagen de la mujer 30">
+                </div>
+                <blockquote>
+                    <p>“Cita inspiradora de la mujer 30...”</p>
+                </blockquote>
+                <p class="author">Nombre de la mujer 30, Cargo</p>
+            </div>
+
+            <!-- Blog 31 -->
+            <div class="blog-box">
+                <div class="image-container">
+                    <img src="ruta-de-la-imagen.jpg" alt="Imagen de la mujer 31">
+                </div>
+                <blockquote>
+                    <p>“Cita inspiradora de la mujer 31...”</p>
+                </blockquote>
+                <p class="author">Nombre de la mujer 31, Cargo</p>
+            </div>
+
+            <!-- Blog 32 -->
+            <div class="blog-box">
+                <div class="image-container">
+                    <img src="ruta-de-la-imagen.jpg" alt="Imagen de la mujer 32">
+                </div>
+                <blockquote>
+                    <p>“Cita inspiradora de la mujer 32...”</p>
+                </blockquote>
+                <p class="author">Nombre de la mujer 32, Cargo</p>
+            </div>
+
+            <!-- Blog 33 -->
+            <div class="blog-box">
+                <div class="image-container">
+                    <img src="ruta-de-la-imagen.jpg" alt="Imagen de la mujer 33">
+                </div>
+                <blockquote>
+                    <p>“Cita inspiradora de la mujer 33...”</p>
+                </blockquote>
+                <p class="author">Nombre de la mujer 33, Cargo</p>
+            </div>
+
+            <!-- Blog 34 -->
+            <div class="blog-box">
+                <div class="image-container">
+                    <img src="ruta-de-la-imagen.jpg" alt="Imagen de la mujer 34">
+                </div>
+                <blockquote>
+                    <p>“Cita inspiradora de la mujer 34...”</p>
+                </blockquote>
+                <p class="author">Nombre de la mujer 34, Cargo</p>
+            </div>
+
+            <!-- Blog 35 -->
+            <div class="blog-box">
+                <div class="image-container">
+                    <img src="ruta-de-la-imagen.jpg" alt="Imagen de la mujer 35">
+                </div>
+                <blockquote>
+                    <p>“Cita inspiradora de la mujer 35...”</p>
+                </blockquote>
+                <p class="author">Nombre de la mujer 35, Cargo</p>
+            </div>
+
+            <!-- Blog 36 -->
+            <div class="blog-box">
+                <div class="image-container">
+                    <img src="ruta-de-la-imagen.jpg" alt="Imagen de la mujer 36">
+                </div>
+                <blockquote>
+                    <p>“Cita inspiradora de la mujer 36...”</p>
+                </blockquote>
+                <p class="author">Nombre de la mujer 36, Cargo</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer con redes sociales y enlaces -->
+    <footer>
+        <div class=social-icons>
+            <p></p> 
+            <a href=https://www.facebook.com/pactoglobalredbolivia target="_blank">
+               <img src=https://images.vexels.com/content/223136/preview/facebook-icon-social-media-8dfafe.png alt="Facebook">
+            </a>
+            <a href=https://www.youtube.com/channel/UCvGxh25-RUvCcZJXHj32Zzg target="_blank">
+                <img src=https://images.vexels.com/content/137425/preview/youtube-icon-logo-719479.png alt="youtube">
+            </a>
+            <a href=https://www.linkedin.com/company/pacto-global-bolivia/ target="_blank">
+                <img src=https://cdn-icons-png.flaticon.com/256/174/174857.png alt="linkedin">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

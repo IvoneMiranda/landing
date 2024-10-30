@@ -1,0 +1,177 @@
+/* Colores basados en la paleta del UN Global Compact */
+:root {
+    --primary-blue: #1E3250;
+    --secondary-gold: #CCB146;
+    --secondary-red: #EC3740;
+    --secondary-green: #297D6D;
+    --secondary-purple: #6E417A;
+    --text-color: #ffffff;
+    --background-light: #fffcfc;
+}
+
+/* Estructura general */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-light);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+header {
+    width: 100%;
+    height: 400px; /* Ajusta la altura según la imagen */
+    position: relative; /* Permite posicionar elementos dentro del header */
+    overflow: hidden; /* Oculta cualquier desbordamiento */
+    background-image: url('editable_image.png'); 
+    background-attachment: fixed; /* Esta propiedad es clave para el efecto parallax */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+    background-size: cover; /* Asegura que la imagen cubra el área */
+    transform: translateZ(-1px);
+}
+
+header img:first-child {
+    display: block; /* Oculta la imagen ya que usamos la propiedad background */
+}
+
+.logo {
+    position: absolute; /* Permite colocar el logo en una posición específica */
+    top: 10px; /* Distancia desde la parte superior */
+    right: 10px; /* Distancia desde la derecha */
+    z-index: 20;
+}
+
+.logo img {
+    width: 300px; /* Ajusta el tamaño del logo*/
+    height: auto;
+    cursor: pointer; /* Para que parezca clicable */
+}
+
+/* Sección del título */
+section h1 {
+    font-family: 'Flama', sans-serif;
+    font-size: 2.5rem;
+    color: var(--primary-blue);
+    text-align: center;
+    margin: 20px 0;
+}
+
+section h2 {
+    font-family: 'Flama', sans-serif;
+    font-size: 2rem; /* Un poco más pequeño */
+    color: var(--primary-blue);
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Blog Container en formato de cuadrícula */
+.blog-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Crea 3 columnas */
+    gap: 2rem; /* Espacio entre las cajas */
+    padding: 20px;
+}
+
+/* Caja del blog */
+.blog-box {
+    background-color: #f2f2f2; /* Color de fondo */
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 350px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    position: relative;
+}
+
+/* Imagen circular */
+.image-container {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 20px; /* Centra la imagen y añade margen abajo */
+    border: 5px solid #1E3250; /* Borde azul */
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Bloque de cita */
+blockquote {
+    border-left: 5px solid #1E3250; /* Línea azul en el borde izquierdo */
+    padding-left: 15px;
+    font-style: italic;
+    color: #333; /* Color del texto de la cita */
+}
+
+/* Estilo del autor */
+.author {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #1E3250; /* Azul primario */
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-blue);
+    color: var(--text-color);
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: var(--secondary-gold);
+    text-decoration: none;
+}
+
+/* Responsividad */
+
+/* Para pantallas medianas, reduce a 2 columnas */
+@media (max-width: 1024px) {
+    .blog-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    }
+}
+
+/* Para pantallas pequeñas, reduce a 1 columna */
+@media (max-width: 768px) {
+    .blog-container {
+        grid-template-columns: 1fr; /* 1 columna */
+    }
+}
+
+/* Estilos para los íconos de redes sociales */
+.social-icons {
+    display: flex;
+    justify-content: center; /* Centra los íconos */
+    gap: 15px; /* Espacio entre los íconos */
+    margin-bottom: 15px;
+}
+  
+.social-icons a {
+    display: inline-block;
+    width: 32px; /* se supone que cambia tamaño */
+    height: 32px;
+    transition: transform 0.3s ease; 
+    margin-right: 15px; 
+}
+
+.social-icons a img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+    margin-right: 15px; 
+}
+
+.social-icons a:hover {
+    transform: scale(1.1); 
+}
+
+.social-icons a:hover svg {
+    fill: var(--secondary-red); 
+}
